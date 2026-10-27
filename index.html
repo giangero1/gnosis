@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gnosis • Catholic & Orthodox Feasts, Saints & Scripture</title>
+  
+  <meta name="description" content="Deepen your spiritual walk with Gnosis. Daily Catholic & Orthodox Feast Days, Patristic Wisdom, and Scripture.">
+  <meta property="og:title" content="Gnosis • Feast Days, Saints & Scripture">
+  <meta property="og:description" content="Daily Catholic & Orthodox Feast Days, Patristic Wisdom, and Scripture. Available now on Google Play.">
+  <meta property="og:image" content="https://giangero1.github.io/gnosis/icon.png">
+  <meta property="og:url" content="https://giangero1.github.io/gnosis/">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" type="image/png" href="icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #08080C;
+      color: #F4E8C1;
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+      position: relative;
+      overflow-x: hidden;
+    }
+    /* Subtle sacred gold glow */
+    body::before {
+      content: '';
+      position: absolute;
+      top: 15%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 420px;
+      height: 420px;
+      background: radial-gradient(circle, rgba(212, 175, 55, 0.12) 0%, rgba(8, 8, 12, 0) 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .card {
+      position: relative;
+      z-index: 1;
+      background: rgba(18, 18, 24, 0.88);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      border-radius: 28px;
+      width: 100%;
+      max-width: 440px;
+      padding: 40px 28px;
+      text-align: center;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.65), 0 0 30px rgba(212, 175, 55, 0.08);
+    }
+    .app-icon {
+      width: 110px;
+      height: 110px;
+      border-radius: 24px;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(212, 175, 55, 0.4);
+      margin-bottom: 22px;
+      transition: transform 0.2s ease;
+    }
+    .app-icon:hover {
+      transform: scale(1.04);
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #D4AF37;
+      margin-bottom: 14px;
+    }
+    h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: 3px;
+      color: #FAF4E6;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+    .tagline {
+      font-size: 14px;
+      color: #C1B9A5;
+      margin-bottom: 24px;
+      line-height: 1.5;
+    }
+    .divider {
+      width: 60px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #D4AF37, transparent);
+      margin: 0 auto 24px auto;
+    }
+    .btn-playstore {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background: linear-gradient(135deg, #ECC440 0%, #D4AF37 50%, #B88E18 100%);
+      color: #0B0B0E;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 15px;
+      padding: 16px 24px;
+      border-radius: 16px;
+      box-shadow: 0 10px 28px rgba(212, 175, 55, 0.35);
+      transition: all 0.2s ease;
+      letter-spacing: 0.5px;
+    }
+    .btn-playstore:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 34px rgba(212, 175, 55, 0.5);
+    }
+    .btn-playstore svg {
+      width: 22px;
+      height: 22px;
+    }
+    .status-text {
+      font-size: 12px;
+      color: #8C8675;
+      margin-top: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+    .status-dot {
+      width: 7px;
+      height: 7px;
+      background-color: #4CAF50;
+      border-radius: 50%;
+      display: inline-block;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { opacity: 0.4; }
+      50% { opacity: 1; }
+      100% { opacity: 0.4; }
+    }
+    .ios-note {
+      font-size: 12px;
+      color: #7A7569;
+      margin-top: 20px;
+      padding-top: 18px;
+      border-top: 1px dashed rgba(255, 255, 255, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <span class="badge">Catholic & Orthodox</span>
+    <br>
+    <img src="icon.png" alt="Gnosis App Icon" class="app-icon">
+    <h1>Gnosis</h1>
+    <p class="tagline">Feast Days, Saints & Scripture<br>Early Church Wisdom for Daily Contemplation</p>
+    <div class="divider"></div>
+
+    <a id="downloadBtn" href="https://play.google.com/store/apps/details?id=com.gnosis.feasts" class="btn-playstore">
+      <svg viewBox="0 0 512 512" fill="currentColor">
+        <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/>
+      </svg>
+      <span>Open in Google Play Store</span>
+    </a>
+
+    <div class="status-text">
+      <span class="status-dot"></span>
+      <span id="statusMsg">Redirecting to Google Play Store...</span>
+    </div>
+
+    <div class="ios-note">
+      🍎 <em>iOS (Apple App Store) version in active development</em>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      var playStoreUrl = "https://play.google.com/store/apps/details?id=com.gnosis.feasts";
+      var marketUrl = "market://details?id=com.gnosis.feasts";
+      var intentUrl = "intent://details?id=com.gnosis.feasts#Intent;scheme=market;package=com.android.vending;end";
+
+      var isAndroid = /android/i.test(navigator.userAgent);
+
+      if (isAndroid) {
+        // Trigger native Android Play Store app instant launch
+        window.location.replace(intentUrl);
+
+        setTimeout(function() {
+          window.location.replace(marketUrl);
+        }, 150);
+
+        setTimeout(function() {
+          document.getElementById('statusMsg').innerText = "Tap above if the Play Store didn't open automatically";
+        }, 1200);
+      } else {
+        document.getElementById('statusMsg').innerText = "Available now on Google Play";
+      }
+    })();
+  </script>
+
+</body>
+</html>
