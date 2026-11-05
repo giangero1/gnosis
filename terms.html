@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service - Gnosis</title>
+  <style>
+    :root {
+      --bg-color: #0f141c;
+      --card-bg: #18202c;
+      --text-main: #e2e8f0;
+      --text-muted: #94a3b8;
+      --accent-gold: #e2b356;
+      --accent-hover: #f3c76f;
+      --border-color: #27354a;
+      --highlight-bg: #1f2b3e;
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg-color: #f8fafc;
+        --card-bg: #ffffff;
+        --text-main: #1e293b;
+        --text-muted: #64748b;
+        --accent-gold: #b47a15;
+        --accent-hover: #925f0c;
+        --border-color: #e2e8f0;
+        --highlight-bg: #f1f5f9;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.7;
+      padding: 32px 16px;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 24px 18px;
+      }
+    }
+
+    header {
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent-gold);
+      background-color: var(--highlight-bg);
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin-bottom: 12px;
+      border: 1px solid var(--border-color);
+    }
+
+    h1 {
+      font-size: 2.1rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 8px;
+    }
+
+    .metadata {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .nav-links {
+      margin-top: 16px;
+      display: flex;
+      gap: 16px;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a {
+      color: var(--accent-gold);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent-hover);
+      text-decoration: underline;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-top: 32px;
+      margin-bottom: 14px;
+      border-left: 4px solid var(--accent-gold);
+      padding-left: 12px;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: var(--text-main);
+    }
+
+    p {
+      margin-bottom: 14px;
+      color: var(--text-main);
+    }
+
+    ul, ol {
+      margin-left: 24px;
+      margin-bottom: 16px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .notice-box {
+      background-color: var(--highlight-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 18px 20px;
+      margin: 20px 0;
+      font-size: 0.95rem;
+    }
+
+    .notice-box strong {
+      color: var(--accent-gold);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 0.95rem;
+    }
+
+    th, td {
+      border: 1px solid var(--border-color);
+      padding: 10px 14px;
+      text-align: left;
+    }
+
+    th {
+      background-color: var(--highlight-bg);
+      color: var(--text-main);
+    }
+
+    footer {
+      border-top: 1px solid var(--border-color);
+      margin-top: 40px;
+      padding-top: 24px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">Legal Agreement</div>
+      <h1>Terms of Service</h1>
+      <div class="metadata">
+        <strong>App:</strong> Gnosis (Package: <code>com.gnosis.feasts</code>)<br />
+        <strong>Effective Date:</strong> November 5, 2026<br />
+        <strong>Developer / Trader:</strong> Giangerostudio (Greece)
+      </div>
+      <div class="nav-links">
+        <a href="privacy.html">Switch to Privacy Policy &rarr;</a>
+      </div>
+    </header>
+
+    <section id="agreement">
+      <h2>1. Agreement to Terms</h2>
+      <p>
+        These Terms of Service ("Terms") constitute a legally binding agreement between you ("User", "you") and <strong>Giangerostudio</strong> ("we", "us", "our"), the developer and publisher of the mobile and desktop application <strong>Gnosis</strong> ("Application", "App").
+      </p>
+      <p>
+        By downloading, installing, accessing, or using Gnosis, or by making any in-app purchase, you signify that you have read, understood, and agreed to be bound by these Terms and our <a href="privacy.html" style="color: var(--accent-gold);">Privacy Policy</a>. If you do not agree with these Terms, you must immediately discontinue use of the App and uninstall it from your device.
+      </p>
+    </section>
+
+    <section id="trader">
+      <h2>2. Trader Status & Developer Information</h2>
+      <p>
+        In accordance with the <strong>European Union Digital Services Act (DSA)</strong> and applicable consumer protection regulations, the trader and operator of this Application is disclosed as:
+      </p>
+      <table>
+        <tr>
+          <th>Entity / Developer</th>
+          <td><strong>Giangerostudio</strong> (Sole Developer)</td>
+        </tr>
+        <tr>
+          <th>Jurisdiction</th>
+          <td>Hellenic Republic (Greece), European Union</td>
+        </tr>
+        <tr>
+          <th>Contact Email</th>
+          <td><a href="mailto:giangerostudio@gmail.com" style="color: var(--accent-gold);">giangerostudio@gmail.com</a></td>
+        </tr>
+        <tr>
+          <th>Application</th>
+          <td>Gnosis (Android Package: <code>com.gnosis.feasts</code>)</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="services">
+      <h2>3. Description of Services & Devotional Content</h2>
+      <p>
+        Gnosis is an interactive Christian liturgical calendar companion designed for Orthodox and Catholic Christians. The core features of the App are provided completely free of charge and include:
+      </p>
+      <ul>
+        <li>Eastern Orthodox (Old Calendar / Julian and New Calendar / Revised Julian) liturgical feast days, fasts, and saint commemorations.</li>
+        <li>Roman Catholic General Roman and National liturgical calendars, solemnities, and memorials.</li>
+        <li>Daily Scripture readings and the Synaxarion (Lives of the Saints).</li>
+        <li>Personalized name day reminders, local device feast notifications, and offline calendar access.</li>
+        <li>Scripture exploration and devotional inquiries via the "Word of God AI" feature.</li>
+      </ul>
+      <div class="notice-box">
+        <strong>Devotional & Spiritual Disclaimer:</strong> All liturgical information, feast dates, fasting guidelines, and saint commemorations are compiled in good faith for personal spiritual edification and devotional reference only. They do not constitute official ecclesiastical decrees, canonical judgments, or sacramental authority. Users should consult their local parish priest, bishop, or spiritual father for authoritative pastoral guidance and parish-specific rubrics.
+      </div>
+    </section>
+
+    <section id="purchases">
+      <h2>4. In-App Purchases: Virtual Candles</h2>
+      <p>
+        The Application allows users to acquire digital consumable items designated as <strong>"Virtual Candles"</strong> ("Candles"). When purchasing or lighting Candles within Gnosis, you explicitly acknowledge and agree to the following conditions:
+      </p>
+
+      <h3>4.1 Purely Digital / Intangible Goods</h3>
+      <p>
+        Virtual Candles are <strong>purely digital, intangible graphical representations</strong> within the software. The purchase or lighting of a Virtual Candle does <strong>NOT</strong> result in the creation, shipping, physical delivery, or real-world lighting of any wax, oil, or beeswax candle in a physical church, shrine, chapel, or monastery.
+      </p>
+
+      <h3>4.2 Devotional Nature & No Supernatural Guarantees</h3>
+      <p>
+        Lighting a digital candle is an interactive visual practice meant solely for personal prayer focus, meditation, and devotional reflection. We make no representations, promises, or warranties regarding spiritual outcomes, divine favor, answer to prayer, or metaphysical results.
+      </p>
+
+      <h3>4.3 Not a Tax-Deductible Charitable Donation</h3>
+      <p>
+        Giangerostudio is an independent software development studio and is not a registered church, monastery, ecclesiastical body, or tax-exempt 501(c)(3) / non-profit charitable entity. Payments for Virtual Candles are <strong>commercial purchases of digital content</strong> and cannot be claimed as tax-deductible charitable contributions.
+      </p>
+
+      <h3>4.4 Consumption, Expiration & No Cash Value</h3>
+      <ul>
+        <li>Candles are consumable digital goods. Once a Candle is lit in the App, it is consumed immediately or burns down over its designated digital duration.</li>
+        <li>Candles, candle tokens, or devotional animations possess no real-world monetary value, cannot be converted into cash, and cannot be transferred, sold, or redeemed outside of the Application.</li>
+        <li>Uninstalling the App or clearing local application data may reset locally tracked candle statuses.</li>
+      </ul>
+    </section>
+
+    <section id="billing">
+      <h2>5. Billing, Payment Processing & Refunds</h2>
+      <h3>5.1 Payment Processing via Google Play</h3>
+      <p>
+        All in-app purchases are processed solely and securely through <strong>Google Play In-App Billing</strong> (operated by Google LLC / Google Commerce Limited). We do not store, process, or have access to your credit card, debit card, or banking details.
+      </p>
+
+      <h3>5.2 Statutory Right of Withdrawal Waiver (EU Consumers)</h3>
+      <p>
+        Under <strong>Article 16(m) of EU Directive 2011/83/EU on Consumer Rights</strong>, the statutory 14-day right of withdrawal for digital content does not apply once the performance of the contract has begun with the consumer's prior express consent and acknowledgment that they lose their right of withdrawal.
+      </p>
+      <div class="notice-box">
+        <strong>Statutory Notice:</strong> By purchasing and activating or lighting a Virtual Candle within Gnosis, you explicitly request and consent to immediate digital performance and acknowledge that your 14-day statutory right of withdrawal is waived upon consumption of the digital item.
+      </div>
+
+      <h3>5.3 Refund Policy</h3>
+      <p>
+        Because Virtual Candles are consumable digital items delivered and consumed immediately upon activation, purchases are generally final and non-refundable. Any requests for refunds must be submitted directly through the <strong>Google Play Store Purchase History / Google Play Refund Center</strong> in accordance with Google Play's standard refund policies.
+      </p>
+    </section>
+
+    <section id="ai-disclaimer">
+      <h2>6. "Word of God AI" & Google AI Search Mode</h2>
+      <p>
+        The Application includes an exploratory feature known as <strong>"Word of God AI"</strong>, designed to assist users in discovering Scripture passages, biblical contexts, and liturgical themes.
+      </p>
+      <ul>
+        <li><strong>Technological Architecture:</strong> The feature utilizes Google AI conversational search technology ("Google AI Search Mode") to retrieve relevant public biblical and liturgical information.</li>
+        <li><strong>Automated Algorithmic Responses:</strong> Output generated by the AI is produced algorithmically by automated language models. Output may occasionally contain historical inaccuracies, incomplete theological context, or computational misinterpretations.</li>
+        <li><strong>Non-Authoritative:</strong> Responses generated by the AI tool are for study and reference only and do not reflect official Catholic or Eastern Orthodox dogma, Holy Tradition, or the consensus of the Holy Fathers.</li>
+        <li><strong>Acceptable Prompting:</strong> You agree not to submit unlawful, blasphemous, defamatory, or abusive queries, and you agree never to input personally identifiable, medical, or financial information into the AI query prompt.</li>
+      </ul>
+    </section>
+
+    <section id="intellectual-property">
+      <h2>7. Intellectual Property & License</h2>
+      <p>
+        We grant you a personal, non-exclusive, non-transferable, revocable license to use the Gnosis Application on your compatible personal devices for personal, non-commercial purposes.
+      </p>
+      <p>
+        All original code, user interface designs, audio recordings, graphic layouts, and compiled database structures within Gnosis are the intellectual property of Giangerostudio or are utilized under applicable open-source and fair-use licenses. Public domain liturgical texts and biblical translations remain the property of their respective traditions or domains.
+      </p>
+    </section>
+
+    <section id="liability">
+      <h2>8. Disclaimer of Warranties & Limitation of Liability</h2>
+      <p>
+        <strong>"AS IS" BASIS:</strong> Gnosis is provided on an "AS IS" and "AS AVAILABLE" basis without warranties of any kind, whether express, implied, or statutory, including but not limited to implied warranties of merchantability, fitness for a particular spiritual or calendar purpose, or uninterrupted availability.
+      </p>
+      <p>
+        <strong>LIMITATION OF LIABILITY:</strong> To the maximum extent permitted under applicable law, in no event shall Giangerostudio, its developers, or affiliates be liable for any indirect, incidental, special, consequential, or punitive damages, or for any loss of data or emotional distress arising out of or related to your use of or inability to use the Application, even if advised of the possibility of such damages. In all cases, our total aggregate liability shall not exceed the amount actually paid by you for in-app purchases within the Application in the twelve (12) months preceding the event giving rise to liability.
+      </p>
+    </section>
+
+    <section id="governing-law">
+      <h2>9. Governing Law & Dispute Resolution</h2>
+      <p>
+        These Terms shall be governed by and construed in accordance with the laws of the <strong>Hellenic Republic (Greece)</strong> and the applicable directives and regulations of the <strong>European Union</strong>, without regard to conflict of law principles. If you are an EU consumer, mandatory statutory protections provided by the laws of your country of residence also apply.
+      </p>
+      <p>
+        European Union consumers may also access the European Commission's Online Dispute Resolution (ODR) platform at <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer" style="color: var(--accent-gold);">https://ec.europa.eu/consumers/odr</a>.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>10. Contact Us</h2>
+      <p>
+        If you have questions, comments, or legal inquiries concerning these Terms of Service, please contact:
+      </p>
+      <p>
+        <strong>Giangerostudio</strong><br />
+        Email: <a href="mailto:giangerostudio@gmail.com" style="color: var(--accent-gold);">giangerostudio@gmail.com</a><br />
+        Developer Website / GitHub: <a href="https://github.com/giangero1/gnosis" target="_blank" rel="noopener noreferrer" style="color: var(--accent-gold);">https://github.com/giangero1/gnosis</a>
+      </p>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Giangerostudio. All rights reserved. &bull; Gnosis App &bull; <a href="privacy.html" style="color: var(--accent-gold);">Privacy Policy</a></p>
+    </footer>
+  </div>
+</body>
+</html>
