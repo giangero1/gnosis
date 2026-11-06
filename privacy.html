@@ -172,6 +172,10 @@
       color: var(--text-main);
     }
 
+    code, td, th, a { overflow-wrap: anywhere; }
+    table { table-layout: fixed; }
+    .nav-links { flex-wrap: wrap; }
+
     footer {
       border-top: 1px solid var(--border-color);
       margin-top: 40px;
@@ -189,7 +193,7 @@
       <h1>Privacy Policy</h1>
       <div class="metadata">
         <strong>App:</strong> Gnosis (Package: <code>com.gnosis.feasts</code>)<br />
-        <strong>Last Updated:</strong> November 5, 2026<br />
+        <strong>Last Updated:</strong> November 6, 2026<br />
         <strong>Developer:</strong> Giangerostudio (Greece)
       </div>
       <div class="nav-links">
@@ -200,7 +204,7 @@
     <section id="overview">
       <h2>1. Overview</h2>
       <p>
-        <strong>Gnosis</strong> is a liturgical calendar application for Orthodox and Catholic Christians developed by <strong>Giangerostudio</strong>. We believe your faith and devotional practice are deeply personal. We are committed to safeguarding your privacy with a privacy-by-design architecture: <strong>we do not track you, sell your personal information, or operate remote surveillance databases.</strong>
+        <strong>Gnosis</strong> is a liturgical calendar application for Orthodox and Catholic Christians developed by <strong>Giangerostudio</strong>. We believe your faith and devotional practice are deeply personal. Core devotional records stay on your device. Optional online features and advertising use third-party services as described below; advertising may involve device identifiers and ad interaction data.
       </p>
       <p>
         This Privacy Policy explains what data the Application accesses, how it is handled, and your rights under global privacy frameworks including the General Data Protection Regulation (GDPR).
@@ -224,7 +228,7 @@
         <li>Locally tracked Virtual Candle timers.</li>
       </ul>
       <p>
-        This data never leaves your device unless you initiate an operating system-level device backup (e.g. Android Auto Backup or Google Drive device backup).
+        These locally stored devotional records are not supplied to the advertising SDK by Gnosis. Operating system-level device backups may include local app data. Advertising and other online services handle separate data as described below.
       </p>
 
       <h3>2.2 "Word of God AI" &amp; Google AI Search Mode</h3>
@@ -247,10 +251,19 @@
       </ul>
     </section>
 
+    <section id="advertising">
+      <h2>2.4 Advertising in Version 7.1.0 and Later</h2>
+      <p>The upcoming Android version 7.1.0 includes Google AdMob for one banner below the homepage news. Earlier versions do not contain this advertising integration. Development builds use test ads; live advertising is enabled separately.</p>
+      <p>When advertising is enabled, Google's Mobile Ads SDK may collect and share IP address (including approximate location), device/account identifiers such as advertising ID and app set ID, ad/app interactions, and diagnostic information. Google uses this data for advertising, analytics and fraud prevention and encrypts SDK data in transit.</p>
+      <p>Gnosis does not send your saved prayer reminders, bookmarks, family names or calendar-tradition preferences as advertising targeting parameters.</p>
+      <p>Google's User Messaging Platform presents privacy choices where required. Ad requests wait until that platform permits them. Where required, you can revisit choices through <strong>Settings → Advertising privacy</strong>. Declining personalization does not block reading or news; ads may be limited or unavailable depending on your choices and Google's rules.</p>
+      <p>See <a href="https://policies.google.com/technologies/ads" style="color: var(--accent-gold);">How Google uses information for advertising</a> and <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" style="color: var(--accent-gold);">Google's SDK data disclosures</a>. You can also reset or delete your advertising ID through Android settings.</p>
+    </section>
+
     <section id="permissions">
       <h2>3. Device Permissions &amp; Purposes</h2>
       <p>
-        Gnosis requests only the minimum device permissions strictly required to deliver calendar reminders and fetch public liturgical data:
+        Gnosis uses device permissions for reminders, online content and supported app features. Versions with AdMob also include SDK permissions for network status and advertising identifiers:
       </p>
       <table>
         <tr>
@@ -259,7 +272,7 @@
         </tr>
         <tr>
           <td><strong>Internet</strong> (<code>android.permission.INTERNET</code>)</td>
-          <td>To fetch public liturgical calendar feeds and submit queries to Google AI Search Mode when the user actively opens the search feature.</td>
+          <td>To fetch public liturgical content, handle user-initiated Google AI Search queries, and load advertising/privacy messages in versions with advertising enabled.</td>
         </tr>
         <tr>
           <td><strong>Post Notifications</strong> (<code>android.permission.POST_NOTIFICATIONS</code>)</td>
@@ -277,6 +290,7 @@
           <td><strong>Vibrate</strong> (<code>android.permission.VIBRATE</code>)</td>
           <td>To enable haptic vibration when a scheduled feast reminder alerts.</td>
         </tr>
+        <tr><td><strong>Advertising ID</strong> (<code>com.google.android.gms.permission.AD_ID</code>)</td><td>Added by the Google Mobile Ads SDK in version 7.1.0 and later for advertising and related measurement when permitted. This is not a request for access to your devotional records.</td></tr>
       </table>
     </section>
 
@@ -286,8 +300,7 @@
         Gnosis maintains a strictly privacy-focused stack. Specifically:
       </p>
       <ul>
-        <li><strong>NO Advertising Networks:</strong> We do not include AdMob, Unity Ads, or any third-party behavioral advertising SDKs.</li>
-        <li><strong>NO Cross-App Tracking:</strong> We do not track users across other apps or websites, and we do not use advertising IDs.</li>
+        <li><strong>Google AdMob and UMP:</strong> Versions 7.1.0 and later include Google's advertising SDK and privacy messaging, as described in section 2.4. Advertising identifiers and other SDK data may be processed by Google according to your privacy choices and applicable requirements.</li>
         <li><strong>Google AI Search Services:</strong> When actively using the "Word of God AI", queries are routed via Google search services to retrieve biblical insights. These interactions are governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style="color: var(--accent-gold);">Google's Privacy Policy</a>.</li>
         <li><strong>Google Play Services:</strong> Used for secure in-app purchase verification of virtual candles.</li>
       </ul>
@@ -296,7 +309,7 @@
     <section id="children">
       <h2>5. Children's Privacy (COPPA &amp; GDPR-K)</h2>
       <p>
-        Gnosis is designed to be family-safe and suitable for Christians of all ages. We do not knowingly collect personal information from children under the age of 13 (or under 16 in the European Union). Because the Application does not collect personal identity data, compliance is built into the design.
+        Gnosis is intended for a general audience and is not specifically directed at children. A general-audience ad content rating is used to restrict inappropriate creatives; it is not age verification. If you believe a child's personal information has been processed inappropriately through the app, please contact us using the details below.
       </p>
     </section>
 
@@ -310,6 +323,8 @@
         <li><strong>Deletion / Right to be Forgotten:</strong> You can completely erase all data, saved name days, and bookmarks at any moment simply by clearing the Application's cache/storage in your device settings or by uninstalling Gnosis.</li>
       </ul>
     </section>
+
+    <p>For information processed by Google advertising services, use the Google privacy and advertising controls linked above. Clearing Gnosis's local storage does not itself delete data already held by Google. Contact us with privacy requests or concerns.</p>
 
     <section id="changes">
       <h2>7. Updates to This Policy</h2>
