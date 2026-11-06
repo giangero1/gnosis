@@ -254,10 +254,10 @@
     <section id="advertising">
       <h2>2.4 Advertising in Version 7.1.0 and Later</h2>
       <p>The upcoming Android version 7.1.0 includes Google AdMob for one banner below the homepage news. Earlier versions do not contain this advertising integration. Development builds use test ads; live advertising is enabled separately.</p>
-      <p>When advertising is enabled, Google's Mobile Ads SDK may collect and share IP address (including approximate location), device/account identifiers such as advertising ID and app set ID, ad/app interactions, and diagnostic information. Google uses this data for advertising, analytics and fraud prevention and encrypts SDK data in transit.</p>
+      <p>Gnosis applies Google's most restrictive CHILD age treatment to every ad request, regardless of the user's age. We do not ask for or store an age or date of birth for advertising. This treatment disables personalized ads, remarketing, third-party ad-vendor requests and transmission of the Android advertising ID. The app also removes advertising-ID and Android AdServices/Topics permissions from its manifest. Restricted ads may still involve processing of IP address (including approximate location), ad interactions and diagnostic information for ad delivery, measurement and fraud prevention; this is not a zero-data service.</p>
       <p>Gnosis does not send your saved prayer reminders, bookmarks, family names or calendar-tradition preferences as advertising targeting parameters.</p>
-      <p>Google's User Messaging Platform presents privacy choices where required. Ad requests wait until that platform permits them. Where required, you can revisit choices through <strong>Settings → Advertising privacy</strong>. Declining personalization does not block reading or news; ads may be limited or unavailable depending on your choices and Google's rules.</p>
-      <p>See <a href="https://policies.google.com/technologies/ads" style="color: var(--accent-gold);">How Google uses information for advertising</a> and <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" style="color: var(--accent-gold);">Google's SDK data disclosures</a>. You can also reset or delete your advertising ID through Android settings.</p>
+      <p>We also set the separate under-age-of-consent signal in Google's User Messaging Platform. Google suppresses its European consent request for that signal; we do not use suppression to request personalized ads. Requests still wait until the platform permits them. If Google requires a privacy-options entry, it appears in <strong>Settings → Advertising privacy</strong>. Reading and news remain available when advertising is unavailable.</p>
+      <p>See <a href="https://policies.google.com/technologies/ads" style="color: var(--accent-gold);">How Google uses information for advertising</a> and <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" style="color: var(--accent-gold);">Google's SDK data disclosures</a>. Google's published <a href="https://support.google.com/admob/answer/6219315" style="color: var(--accent-gold);">age-treatment restrictions</a> describe the protections applied to these requests.</p>
     </section>
 
     <section id="permissions">
@@ -290,7 +290,7 @@
           <td><strong>Vibrate</strong> (<code>android.permission.VIBRATE</code>)</td>
           <td>To enable haptic vibration when a scheduled feast reminder alerts.</td>
         </tr>
-        <tr><td><strong>Advertising ID</strong> (<code>com.google.android.gms.permission.AD_ID</code>)</td><td>Added by the Google Mobile Ads SDK in version 7.1.0 and later for advertising and related measurement when permitted. This is not a request for access to your devotional records.</td></tr>
+        <tr><td><strong>Advertising ID</strong> (<code>com.google.android.gms.permission.AD_ID</code>)</td><td>Explicitly removed from Gnosis's manifest in the restricted advertising configuration. Android advertising-ID transmission is also disabled by the SDK's CHILD age treatment.</td></tr>
       </table>
     </section>
 
@@ -300,7 +300,7 @@
         Gnosis maintains a strictly privacy-focused stack. Specifically:
       </p>
       <ul>
-        <li><strong>Google AdMob and UMP:</strong> Versions 7.1.0 and later include Google's advertising SDK and privacy messaging, as described in section 2.4. Advertising identifiers and other SDK data may be processed by Google according to your privacy choices and applicable requirements.</li>
+        <li><strong>Google AdMob and UMP:</strong> Versions 7.1.0 and later include Google's advertising SDK and privacy messaging, as described in section 2.4. All ad requests use the restricted child-age treatment described above. Other SDK data may still be processed by Google for restricted ad delivery and related purposes.</li>
         <li><strong>Google AI Search Services:</strong> When actively using the "Word of God AI", queries are routed via Google search services to retrieve biblical insights. These interactions are governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style="color: var(--accent-gold);">Google's Privacy Policy</a>.</li>
         <li><strong>Google Play Services:</strong> Used for secure in-app purchase verification of virtual candles.</li>
       </ul>
@@ -324,7 +324,7 @@
       </ul>
     </section>
 
-    <p>For information processed by Google advertising services, use the Google privacy and advertising controls linked above. Clearing Gnosis's local storage does not itself delete data already held by Google. Contact us with privacy requests or concerns.</p>
+    <p>For information processed by Google advertising services, use the Google privacy controls linked above. Clearing Gnosis's local storage does not itself delete data already held by Google. Contact us with privacy requests or concerns.</p>
 
     <section id="changes">
       <h2>7. Updates to This Policy</h2>
